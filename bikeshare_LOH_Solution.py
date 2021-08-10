@@ -141,6 +141,7 @@ def user_stats(df):
     # Display counts of user types
     print('User Type Stats:', df.groupby('User Type')['User Type'].count())
 
+    # washington has no user stats so return 
     if(selected_city == 'w'):
         return 0
 
